@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "ddd4ac4c-c5be-4f35-a5ad-de139641a150",
+		"name": "bank-person-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Person-APIs",
+			"item": [
+				{
+					"name": "PeopleList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8010/api/v1/people",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8010",
+							"path": [
+								"api",
+								"v1",
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonAdd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"personType\": \"EMPRESARIAL\",\r\n    \"companyName\": \"IBM SAC\",\r\n    \"docType\": \"DNI\",\r\n    \"docNumber\": \"15852585\",\r\n    \"firstName\": \"Juana\",\r\n    \"lastName\": \"Borja Borja\",\r\n    \"gender\": \"M\",\r\n    \"address\": \"Jr. La Paz\",\r\n    \"telephone\": \"925081700\",\r\n    \"email\": \"juanacarion@data.com\",\r\n    \"birthday\": \"1999-02-12T00:00:00.000+00:00\",\r\n    \"actived\": false,\r\n    \"married\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8010/api/v1/people",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8010",
+							"path": [
+								"api",
+								"v1",
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonUpd",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": \"617792fc50901e5057479a56\",\r\n        \"personType\": \"PERSONAL\",\r\n        \"companyName\": \"\",\r\n        \"docType\": \"DNI\",\r\n        \"docNumber\": \"17152536\",\r\n        \"firstName\": \"Lolo\",\r\n        \"lastName\": \"Borja Borja\",\r\n        \"gender\": \"M\",\r\n        \"address\": \"Jr. La Paz\",\r\n        \"telephone\": \"925481999\",\r\n        \"email\": \"lolocarion@data.com\",\r\n        \"birthday\": \"1999-02-12T00:00:00.000+00:00\",\r\n        \"married\": false,\r\n        \"actived\": false\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8010/api/v1/people",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8010",
+							"path": [
+								"api",
+								"v1",
+								"people"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonDel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8010/api/v1/people/6176326ec45a345f2c14fc91",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8010",
+							"path": [
+								"api",
+								"v1",
+								"people",
+								"6176326ec45a345f2c14fc91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonSearch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8010/api/v1/people/docs/45875626",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8010",
+							"path": [
+								"api",
+								"v1",
+								"people",
+								"docs",
+								"45875626"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PersonSearchById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8010/api/v1/people/ids/617631c1c45a345f2c14fc8e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8010",
+							"path": [
+								"api",
+								"v1",
+								"people",
+								"ids",
+								"617631c1c45a345f2c14fc8e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
